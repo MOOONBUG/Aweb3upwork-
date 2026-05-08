@@ -1,0 +1,4 @@
+Project 1: NovaFi Web3 Landing Page
+Live Demo: https://aweb3upwork.vercel.app/
+GitHub: https://github.com/MOOONBUG/Aweb3upwork-
+Status: Public repository, deployed on Vercel

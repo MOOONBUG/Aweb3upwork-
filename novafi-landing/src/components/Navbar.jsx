@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import LanguageSwitcher from './LanguageSwitcher.jsx'
+import { useLanguage } from '../context/LanguageContext.jsx'
 
 /**
- * Top navigation: logo, anchor links to page sections, and a primary CTA.
- * On small screens, links collapse into a simple full-screen menu.
+ * Top navigation: logo, anchor links, language switcher, and primary CTA.
+ * On small screens, section links + CTA move into a full-screen drawer.
  */
 export default function Navbar() {
+  const { t } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
 
   const closeMenu = () => setMenuOpen(false)
@@ -16,48 +19,54 @@ export default function Navbar() {
           Nova<span>Fi</span>
         </a>
 
-        {/* Desktop links */}
-        <nav className="nav-links" aria-label="Main">
-          <a href="#features">Features</a>
-          <a href="#how">How it works</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#faq">FAQ</a>
+        {/* Desktop / tablet: in-page anchors */}
+        <nav className="nav-links" aria-label={t.nav.mainNav}>
+          <a href="#features">{t.nav.features}</a>
+          <a href="#how">{t.nav.howItWorks}</a>
+          <a href="#roadmap">{t.nav.roadmap}</a>
+          <a href="#faq">{t.nav.faq}</a>
         </nav>
 
-        <div className="nav-cta">
-          <a href="#hero" className="btn btn-primary">
-            Launch App
-          </a>
-          <button
-            type="button"
-            className="menu-toggle"
-            aria-expanded={menuOpen}
-            aria-label="Toggle menu"
-            onClick={() => setMenuOpen((v) => !v)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
+        {/* Language + primary CTA + mobile menu trigger */}
+        <div className="nav-actions">
+          <LanguageSwitcher />
+
+          <div className="nav-cta">
+            <a href="#hero" className="btn btn-primary">
+              {t.nav.launchApp}
+            </a>
+            <button
+              type="button"
+              className="menu-toggle"
+              aria-expanded={menuOpen}
+              aria-label={t.nav.toggleMenu}
+              onClick={() => setMenuOpen((v) => !v)}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile overlay menu */}
+      {/* Mobile overlay: same links as desktop, translated */}
       <div className={`mobile-drawer ${menuOpen ? 'open' : ''}`}>
+        <LanguageSwitcher />
         <a href="#features" onClick={closeMenu}>
-          Features
+          {t.nav.features}
         </a>
         <a href="#how" onClick={closeMenu}>
-          How it works
+          {t.nav.howItWorks}
         </a>
         <a href="#roadmap" onClick={closeMenu}>
-          Roadmap
+          {t.nav.roadmap}
         </a>
         <a href="#faq" onClick={closeMenu}>
-          FAQ
+          {t.nav.faq}
         </a>
         <a href="#hero" className="btn btn-primary" onClick={closeMenu}>
-          Launch App
+          {t.nav.launchApp}
         </a>
       </div>
     </header>
