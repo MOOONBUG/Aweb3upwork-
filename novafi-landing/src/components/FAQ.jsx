@@ -1,43 +1,25 @@
 import { useState } from 'react'
+import { useLanguage } from '../context/LanguageContext.jsx'
 
 /**
  * FAQ: clickable questions that expand/collapse answers (one open at a time).
+ * Questions and answers are loaded from `t.faq` for the active language.
  */
-const faqs = [
-  {
-    q: 'Is NovaFi a real company?',
-    a: 'NovaFi is a fictional project for this demo landing page. It shows how a Web3 product story could look in React.',
-  },
-  {
-    q: 'Do I need crypto experience?',
-    a: 'The UI is designed for beginners: plain language, clear fees, and guided flows. Advanced tools are available when you are ready.',
-  },
-  {
-    q: 'Which wallets are supported?',
-    a: 'Any standard EVM wallet works (e.g. MetaMask, Rainbow, Coinbase Wallet). Hardware wallets are supported through browser providers.',
-  },
-  {
-    q: 'Are there fees?',
-    a: 'Network fees depend on chain activity. NovaFi charges a small protocol fee on certain vault strategies — always shown before you confirm.',
-  },
-]
-
 export default function FAQ() {
+  const { t } = useLanguage()
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
     <section id="faq" className="section-padding">
       <div className="container">
-        <h2 className="section-title">FAQ</h2>
-        <p className="section-lead">
-          Quick answers about NovaFi. Tap a question to read more.
-        </p>
+        <h2 className="section-title">{t.faq.sectionTitle}</h2>
+        <p className="section-lead">{t.faq.sectionLead}</p>
         <div className="faq-wrap">
-          {faqs.map((item, index) => {
+          {t.faq.items.map((item, index) => {
             const isOpen = openIndex === index
             return (
               <div
-                key={item.q}
+                key={item.id}
                 className={`faq-item ${isOpen ? 'open' : ''}`}
               >
                 <button

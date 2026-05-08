@@ -1,5 +1,8 @@
+import { useLanguage } from '../context/LanguageContext.jsx'
+
 /**
  * Features: three highlight cards with simple SVG icons (no extra libraries).
+ * Copy comes from `t.features` so it follows the active language.
  */
 function IconShield() {
   return (
@@ -41,43 +44,34 @@ function IconLayers() {
   )
 }
 
-const items = [
-  {
-    title: 'Security-first design',
-    body: 'Smart contracts audited and monitored. Your keys stay in your wallet — NovaFi never custodies funds.',
-    Icon: IconShield,
-  },
-  {
-    title: 'Fast finality',
-    body: 'Purpose-built rollup delivers low latency and predictable fees, so transactions feel instant.',
-    Icon: IconBolt,
-  },
-  {
-    title: 'Composable modules',
-    body: 'Plug in swaps, lending, and staking through one SDK. Ship products faster with fewer integrations.',
-    Icon: IconLayers,
-  },
-]
+/** Matches each translation item `id` to its icon (same order as English copy). */
+const iconsById = {
+  security: IconShield,
+  speed: IconBolt,
+  modules: IconLayers,
+}
 
 export default function Features() {
+  const { t } = useLanguage()
+
   return (
     <section id="features" className="features section-padding">
       <div className="container">
-        <h2 className="section-title">Why NovaFi</h2>
-        <p className="section-lead">
-          Everything you need to move value on-chain — without drowning in
-          complexity.
-        </p>
+        <h2 className="section-title">{t.features.sectionTitle}</h2>
+        <p className="section-lead">{t.features.sectionLead}</p>
         <div className="feature-grid">
-          {items.map(({ title, body, Icon }) => (
-            <article key={title} className="feature-card">
-              <div className="feature-icon">
-                <Icon />
-              </div>
-              <h3>{title}</h3>
-              <p>{body}</p>
-            </article>
-          ))}
+          {t.features.items.map((item) => {
+            const Icon = iconsById[item.id]
+            return (
+              <article key={item.id} className="feature-card">
+                <div className="feature-icon">
+                  <Icon />
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            )
+          })}
         </div>
       </div>
     </section>

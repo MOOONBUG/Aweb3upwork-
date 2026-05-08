@@ -1,7 +1,13 @@
+import { useLanguage } from '../context/LanguageContext.jsx'
+
 /**
  * Footer: brand blurb, quick links, and placeholder socials.
+ * Visible strings use `t.footer` and nav labels so they match the rest of the site.
  */
 export default function Footer() {
+  const { t } = useLanguage()
+  const year = new Date().getFullYear()
+
   return (
     <footer className="footer">
       <div className="container">
@@ -10,48 +16,47 @@ export default function Footer() {
             <div className="logo">
               Nova<span>Fi</span>
             </div>
-            <p>
-              Next-generation DeFi infrastructure — fictional demo for a modern
-              Web3 landing experience.
-            </p>
+            <p>{t.footer.tagline}</p>
           </div>
           <div className="footer-col">
-            <h4>Product</h4>
+            <h4>{t.footer.product}</h4>
             <ul>
               <li>
-                <a href="#features">Features</a>
+                <a href="#features">{t.nav.features}</a>
               </li>
               <li>
-                <a href="#roadmap">Roadmap</a>
+                <a href="#roadmap">{t.nav.roadmap}</a>
               </li>
               <li>
-                <a href="#faq">FAQ</a>
+                <a href="#faq">{t.nav.faq}</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>Legal</h4>
+            <h4>{t.footer.legal}</h4>
             <ul>
               <li>
-                <a href="#hero">Privacy (demo)</a>
+                <a href="#hero">{t.footer.privacy}</a>
               </li>
               <li>
-                <a href="#hero">Terms (demo)</a>
+                <a href="#hero">{t.footer.terms}</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} NovaFi. Demo project.</span>
+          <span>
+            © {year} NovaFi. {t.footer.copyright}
+          </span>
           <div className="social-row">
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              Twitter
+              {t.footer.twitter}
             </a>
             <a href="https://discord.com" target="_blank" rel="noreferrer">
-              Discord
+              {t.footer.discord}
             </a>
             <a href="https://github.com" target="_blank" rel="noreferrer">
-              GitHub
+              {t.footer.github}
             </a>
           </div>
         </div>
