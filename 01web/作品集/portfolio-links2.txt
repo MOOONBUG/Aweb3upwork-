@@ -1,0 +1,31 @@
+Project 2: Crypto Market Dashboard
+
+Description:
+A modern multilingual crypto market dashboard that tracks around 80 crypto assets across multiple Web3 categories. Built as a portfolio project to demonstrate API integration, data filtering, category navigation, responsive dashboard UI, and multilingual support.
+
+Live Demo:
+https://aweb3upwork-rtxc.vercel.app/
+
+GitHub Repository:
+https://github.com/MOOONBUG/Aweb3upwork-
+
+Tech Stack:
+React, Vite, JavaScript, CSS, CoinGecko API, GitHub, Vercel
+
+Features:
+- Tracks around 80 crypto assets
+- CoinGecko market data integration
+- Category navigation: Layer 1, Layer 2, DeFi, Meme, AI, Gaming, Infrastructure, Oracle, Exchange, Stablecoins, RWA, Privacy, Storage
+- Search/filter input
+- Portfolio snapshot summary
+- Top movers section
+- Market overview visual bars
+- Asset cards with rank, price, 24h change, market cap, and 24h volume
+- EN / 中文 / KR language switcher
+- Responsive dark Web3 dashboard UI
+
+Status:
+Completed and deployed
+
+Screenshot:
+Saved locally
