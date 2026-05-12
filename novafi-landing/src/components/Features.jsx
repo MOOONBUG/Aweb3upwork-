@@ -23,12 +23,12 @@ export default function Features() {
                   type="button"
                   onClick={() => setOpenIndex(isActive ? null : item.id)}
                   aria-expanded={isActive}
-                  aria-label={t.features.items[item.id].title}
+                  aria-label={t.features.items[item.id]?.title || 'Title'}
                 >
-                  {item.title}
+                  {item.title || 'Title'}
                 </button>
                 <div className={`feature-body ${isActive ? 'visible' : ''}`}>
-                  <p>{item.body}</p>
+                  <p>{item.body || 'Body text'}</p>
                 </div>
               </div>
             )
