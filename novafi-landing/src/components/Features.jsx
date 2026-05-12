@@ -1,58 +1,13 @@
+import { useState } from 'react'
+import LanguageSwitcher from './LanguageSwitcher.jsx'
 import { useLanguage } from '../context/LanguageContext.jsx'
 
 /**
- * Features: three highlight cards with simple SVG icons (no extra libraries).
- * Copy comes from `t.features` so it follows the active language.
+ * Features: section showcasing key features of the product.
  */
-function IconShield() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M12 2L4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function IconBolt() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M13 2L4 14h7l-1 8 10-14h-7l0-6z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function IconLayers() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M12 2l10 5-10 5L2 7l10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-/** Matches each translation item `id` to its icon (same order as English copy). */
-const iconsById = {
-  security: IconShield,
-  speed: IconBolt,
-  modules: IconLayers,
-}
-
 export default function Features() {
   const { t } = useLanguage()
+  const [openIndex, setOpenIndex] = useState(0)
 
   return (
     <section id="features" className="features section-padding">
@@ -61,15 +16,21 @@ export default function Features() {
         <p className="section-lead">{t.features.sectionLead}</p>
         <div className="feature-grid">
           {t.features.items.map((item) => {
-            const Icon = iconsById[item.id]
+            const isActive = openIndex === item.id
             return (
-              <article key={item.id} className="feature-card">
-                <div className="feature-icon">
-                  <Icon />
+              <div key={item.id} className={`feature-item ${isActive ? 'active' : ''}`}>
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isActive ? null : item.id)}
+                  aria-expanded={isActive}
+                  aria-label={t.features.items[item.id].title}
+                >
+                  {item.title}
+                </button>
+                <div className={`feature-body ${isActive ? 'visible' : ''}`}>
+                  <p>{item.body}</p>
                 </div>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
+              </div>
             )
           })}
         </div>
