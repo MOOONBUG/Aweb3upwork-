@@ -10,6 +10,7 @@ export default function Roadmap() {
   return (
     <section id="roadmap" className="roadmap section-padding">
       <div className="container">
+        <p className="section-lead">{t.roadmap.sectionEyebrow}</p>
         <h2 className="section-title">{t.roadmap.sectionTitle}</h2>
         <p className="section-lead">{t.roadmap.sectionLead}</p>
         <div className="roadmap-list">
@@ -18,6 +19,7 @@ export default function Roadmap() {
               <div className="roadmap-phase">{phase.label}</div>
               <div>
                 <h3>{phase.title}</h3>
+                <p>{phase.summary}</p>
                 <ul>
                   {phase.bullets.map((b) => (
                     <li key={b}>{b}</li>

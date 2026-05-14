@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import LanguageSwitcher from './LanguageSwitcher.jsx'
 import { useLanguage } from '../context/LanguageContext.jsx'
 
 /**

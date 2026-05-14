@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import LanguageSwitcher from './LanguageSwitcher.jsx'
 import { useLanguage } from '../context/LanguageContext.jsx'
 
 /**
@@ -7,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext.jsx'
  */
 export default function Features() {
   const { t } = useLanguage()
-  const [openIndex, setOpenIndex] = useState(0)
+  const [openIndex, setOpenIndex] = useState('security')
 
   return (
     <section id="features" className="features section-padding">
@@ -23,7 +22,7 @@ export default function Features() {
                   type="button"
                   onClick={() => setOpenIndex(isActive ? null : item.id)}
                   aria-expanded={isActive}
-                  aria-label={t.features.items[item.id]?.title || 'Title'}
+                  aria-label={item.title || 'Title'}
                 >
                   {item.title || 'Title'}
                 </button>

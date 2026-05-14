@@ -16,11 +16,12 @@ export const translations = {
       chooseLanguage: 'Choose language',
     },
     hero: {
-      badge: '● Mainnet-ready preview',
-      titleBefore: 'DeFi infrastructure that feels',
-      titleHighlight: 'effortless',
+      badge: '● Security-first Web3 infrastructure',
+      titleBefore: 'Enterprise-grade crypto infrastructure for',
+      titleHighlight: 'trust',
+      titleAfter: 'and scale',
       lead:
-        'NovaFi connects wallets, liquidity, and yield in one secure layer. Built for builders and everyday users who want Web3 without the friction.',
+        'NovaFi unifies custody-free asset workflows, cross-chain operations, and developer-ready rails in one secure layer — built for teams that need compliance-minded execution without the template look.',
       exploreFeatures: 'Explore features',
       readFaq: 'Read FAQ',
       cardHeader: 'Portfolio snapshot',
@@ -32,139 +33,153 @@ export const translations = {
       statTotalValue: '$42,180',
     },
     features: {
-      sectionTitle: 'Why NovaFi',
+      sectionTitle: 'Infrastructure designed for trust',
       sectionLead:
-        'Everything you need to move value on-chain — without drowning in complexity.',
+        'A clear operating layer for security, compliance, and cross-chain asset movement.',
       items: [
         {
           id: 'security',
-          title: 'Security-first design',
+          title: 'Security and compliance posture',
           body:
-            'Smart contracts audited and monitored. Your keys stay in your wallet — NovaFi never custodies funds.',
+            'Audited contracts, monitoring hooks, and permission-aware flows keep NovaFi aligned with enterprise risk expectations. Funds remain non-custodial by design.',
         },
         {
           id: 'speed',
-          title: 'Fast finality',
+          title: 'Cross-chain execution layer',
           body:
-            'Purpose-built rollup delivers low latency and predictable fees, so transactions feel instant.',
+            'Route assets across networks with predictable settlement paths, transparent fees, and reliable finality for operating teams.',
         },
         {
           id: 'modules',
-          title: 'Composable modules',
+          title: 'Developer-friendly workflows',
           body:
-            'Plug in swaps, lending, and staking through one SDK. Ship products faster with fewer integrations.',
+            'One SDK exposes swaps, vaults, and treasury flows so product teams can ship faster without stitching together fragile integrations.',
         },
       ],
     },
     howItWorks: {
-      sectionTitle: 'How it works',
-      sectionLead: 'Three steps from zero to yield. No jargon required.',
+      sectionEyebrow: 'Operational flow',
+      sectionTitle: 'How operations move through NovaFi',
+      sectionLead:
+        'A secure operating path for asset controls, cross-chain execution, and audit-ready team workflows.',
       steps: [
         {
           id: 'wallet',
-          title: 'Connect your wallet',
+          label: 'Step 01',
+          kicker: 'Trusted access layer',
+          title: 'Connect policy-approved wallets',
           body:
-            'Use any popular EVM wallet. NovaFi reads balances without moving assets.',
+            'Connect standard EVM wallets or approved custody providers. NovaFi reads balances and permissions without taking custody or moving assets.',
         },
         {
           id: 'strategy',
-          title: 'Choose a strategy',
+          label: 'Step 02',
+          kicker: 'Execution policy',
+          title: 'Set the workflow',
           body:
-            'Pick curated vaults or route liquidity manually — fees are shown upfront.',
+            'Choose treasury routes, vault policies, or cross-chain execution paths. Costs, controls, and execution rules are shown before you confirm.',
         },
         {
           id: 'earn',
-          title: 'Earn & withdraw',
+          label: 'Step 03',
+          kicker: 'Reporting trail',
+          title: 'Track, settle, and report',
           body:
-            'Rewards accrue continuously. Exit anytime with transparent settlement.',
+            'Monitor positions, settle with transparency, and export the operational trail your finance, risk, and ops teams need.',
         },
       ],
     },
     roadmap: {
+      sectionEyebrow: 'Delivery path',
       sectionTitle: 'Roadmap',
       sectionLead:
-        'A transparent path from launch to community-owned protocol.',
+        'A measured rollout from controlled launch to multi-chain, infrastructure-grade operations.',
       phases: [
         {
           id: 'q1',
-          label: 'Q1 2026',
-          title: 'Foundation',
+          label: 'Phase 01',
+          title: 'Controlled launch',
+          summary: 'Build trust foundations before widening access.',
           bullets: [
-            'Public testnet',
-            'Wallet SDK alpha',
-            'Community grants',
+            'Security review and audits',
+            'Private testnet for partners',
+            'Developer SDK alpha',
           ],
         },
         {
           id: 'q2',
-          label: 'Q2 2026',
-          title: 'Growth',
+          label: 'Phase 02',
+          title: 'Operational expansion',
+          summary: 'Open core workflows with stricter policy controls.',
           bullets: [
-            'Mainnet launch',
-            'Liquidity mining',
-            'Partner integrations',
+            'Mainnet launch with policy controls',
+            'Treasury and vault workflows',
+            'Partner and custody integrations',
           ],
         },
         {
           id: 'q3',
-          label: 'Q3 2026',
-          title: 'Scale',
+          label: 'Phase 03',
+          title: 'Cross-chain scale',
+          summary: 'Expand routing, analytics, and institutional access.',
           bullets: [
-            'Cross-chain bridges',
-            'Institutional APIs',
-            'Mobile app beta',
+            'Cross-chain routing',
+            'Institutional API suite',
+            'Workflow analytics dashboard',
           ],
         },
         {
           id: 'q4',
-          label: 'Q4 2026',
-          title: 'Governance',
+          label: 'Phase 04',
+          title: 'Protocol maturity',
+          summary: 'Harden governance, controls, and reporting.',
           bullets: [
-            'DAO treasury',
-            'Token vote live',
-            'Research roadmap 2027',
+            'Governance and controls layer',
+            'Compliance reporting exports',
+            '2027 expansion blueprint',
           ],
         },
       ],
     },
     faq: {
       sectionTitle: 'FAQ',
-      sectionLead: 'Quick answers about NovaFi. Tap a question to read more.',
+      sectionLead:
+        'Concise answers for security, treasury, operations, and integration teams.',
       items: [
         {
           id: 'real',
-          q: 'Is NovaFi a real company?',
+          q: 'Is NovaFi production-ready?',
           a:
-            'NovaFi is a fictional project for this demo landing page. It shows how a Web3 product story could look in React.',
+            'This landing page is a fictional demo, but the information architecture is shaped like a credible Web3 infrastructure platform for enterprise trust.',
         },
         {
           id: 'experience',
-          q: 'Do I need crypto experience?',
+          q: 'Is it developer-friendly?',
           a:
-            'The UI is designed for beginners: plain language, clear fees, and guided flows. Advanced tools are available when you are ready.',
+            'Yes. The copy, workflows, and feature structure are built for teams that want clear APIs, predictable execution, and low-friction integration.',
         },
         {
           id: 'wallets',
-          q: 'Which wallets are supported?',
+          q: 'Which wallets and custody setups are supported?',
           a:
-            'Any standard EVM wallet works (e.g. MetaMask, Rainbow, Coinbase Wallet). Hardware wallets are supported through browser providers.',
+            'Standard EVM wallets and approved custody setups fit the flow. Hardware wallets can be supported through browser-based providers where the integration allows it.',
         },
         {
           id: 'fees',
-          q: 'Are there fees?',
+          q: 'How are fees handled?',
           a:
-            'Network fees depend on chain activity. NovaFi charges a small protocol fee on certain vault strategies — always shown before you confirm.',
+            'Network fees depend on the target chain. Any protocol fee or route cost is disclosed before confirmation so teams can plan execution with fewer surprises.',
         },
       ],
     },
     footer: {
       tagline:
-        'Next-generation DeFi infrastructure — fictional demo for a modern Web3 landing experience.',
-      product: 'Product',
-      legal: 'Legal',
-      privacy: 'Privacy (demo)',
-      terms: 'Terms (demo)',
-      copyright: 'Demo project.',
+        'Security-first Web3 infrastructure for teams that run with trust, controls, and precision.',
+      product: 'Platform',
+      legal: 'Governance',
+      privacy: 'Privacy',
+      terms: 'Terms',
+      copyright: 'Demo concept — not a live protocol.',
       twitter: 'Twitter',
       discord: 'Discord',
       github: 'GitHub',
@@ -183,11 +198,12 @@ export const translations = {
       chooseLanguage: '选择语言',
     },
     hero: {
-      badge: '● 主网就绪预览',
-      titleBefore: '让 DeFi 基础设施',
-      titleHighlight: '游刃有余',
+      badge: '● 安全优先的 Web3 基础设施',
+      titleBefore: '面向机构级信任的加密基础设施，',
+      titleHighlight: '更稳健',
+      titleAfter: '更可扩展',
       lead:
-        'NovaFi 将钱包、流动性与收益聚合在同一安全层。为开发者和希望轻松使用 Web3 的用户而打造。',
+        'NovaFi 在同一安全层内整合资产工作流、跨链操作与开发者能力，帮助团队以合规思维完成执行，而不是停留在模板化叙事。',
       exploreFeatures: '了解功能',
       readFaq: '查看常见问题',
       cardHeader: '资产概览',
@@ -199,121 +215,133 @@ export const translations = {
       statTotalValue: '$42,180',
     },
     features: {
-      sectionTitle: '为何选择 NovaFi',
-      sectionLead: '链上转移价值所需的一切——不再被复杂流程淹没。',
+      sectionTitle: '为信任而设计的基础设施',
+      sectionLead: '面向安全、合规与跨链资产流转的清晰运营层。',
       items: [
         {
           id: 'security',
-          title: '安全优先',
+          title: '安全与合规姿态',
           body:
-            '智能合约经审计与持续监控。私钥始终留在你的钱包——NovaFi 不托管资金。',
+            '经过审计的合约、监控机制与权限感知流程，使 NovaFi 更贴近企业级风险要求；资金始终保持非托管。',
         },
         {
           id: 'speed',
-          title: '快速确认',
+          title: '跨链执行层',
           body:
-            '专用 Rollup 带来低延迟与可预测手续费，让交易体验近乎即时。',
+            '在多链之间进行资产路由，提供可预测的结算路径、透明费用与稳定的最终性。',
         },
         {
           id: 'modules',
-          title: '可组合模块',
+          title: '开发者友好工作流',
           body:
-            '通过单一 SDK 接入兑换、借贷与质押。更少集成，更快上线产品。',
+            '一个 SDK 即可覆盖兑换、金库与资金管理流程，减少脆弱集成，加快上线节奏。',
         },
       ],
     },
     howItWorks: {
-      sectionTitle: '运作方式',
-      sectionLead: '三步从零到收益。无需业内黑话。',
+      sectionEyebrow: '运营流程',
+      sectionTitle: 'NovaFi 中的运作路径',
+      sectionLead: '面向资产控制、跨链执行与可审计运营的安全工作流。',
       steps: [
         {
           id: 'wallet',
-          title: '连接钱包',
+          label: '步骤 01',
+          kicker: '可信接入层',
+          title: '连接已批准的钱包',
           body:
-            '支持主流 EVM 钱包。NovaFi 仅读取余额，不会擅自转移资产。',
+            '支持标准 EVM 钱包或已批准的托管方案。NovaFi 只读取余额与权限，不会托管或移动资产。',
         },
         {
           id: 'strategy',
-          title: '选择策略',
+          label: '步骤 02',
+          kicker: '执行策略',
+          title: '设定工作流',
           body:
-            '可使用精选金库或手动路由流动性——费用在确认前清晰展示。',
+            '选择资金管理路径、金库策略或跨链执行路径。费用、控制项与执行规则会在确认前展示。',
         },
         {
           id: 'earn',
-          title: '赚取与提现',
+          label: '步骤 03',
+          kicker: '报告留痕',
+          title: '追踪、结算与汇报',
           body:
-            '收益持续累积。可随时退出，结算过程公开透明。',
+            '持续追踪仓位、透明结算，并导出财务、风控与运营团队所需的记录。',
         },
       ],
     },
     roadmap: {
+      sectionEyebrow: '交付路径',
       sectionTitle: '路线图',
-      sectionLead: '从上线到社区主导协议的清晰路径。',
+      sectionLead: '从受控上线稳步推进至多链、基础设施级运营。',
       phases: [
         {
           id: 'q1',
-          label: '2026 Q1',
-          title: '奠基',
-          bullets: ['公开测试网', '钱包 SDK 内测', '社区资助'],
+          label: '阶段 01',
+          title: '受控上线',
+          summary: '先建立信任基础，再逐步扩大接入。',
+          bullets: ['安全审计与复核', '合作方私有测试网', '开发者 SDK Alpha'],
         },
         {
           id: 'q2',
-          label: '2026 Q2',
-          title: '增长',
-          bullets: ['主网上线', '流动性挖矿', '合作伙伴接入'],
+          label: '阶段 02',
+          title: '运营扩展',
+          summary: '在更严格的策略控制下开放核心流程。',
+          bullets: ['主网上线并启用策略控制', '资金与金库工作流', '合作与托管集成'],
         },
         {
           id: 'q3',
-          label: '2026 Q3',
-          title: '扩展',
-          bullets: ['跨链桥', '机构 API', '移动应用内测'],
+          label: '阶段 03',
+          title: '跨链扩展',
+          summary: '扩展路由、分析与机构接入能力。',
+          bullets: ['跨链路由', '机构 API 套件', '工作流分析面板'],
         },
         {
           id: 'q4',
-          label: '2026 Q4',
-          title: '治理',
-          bullets: ['DAO 金库', '代币投票上线', '2027 研究路线'],
+          label: '阶段 04',
+          title: '协议成熟',
+          summary: '强化治理、控制与合规报表能力。',
+          bullets: ['治理与控制层', '合规报表导出', '2027 扩展蓝图'],
         },
       ],
     },
     faq: {
       sectionTitle: '常见问题',
-      sectionLead: '关于 NovaFi 的快速解答。点击问题展开。',
+      sectionLead: '面向安全、资金、运营与集成团队的简明答案。',
       items: [
         {
           id: 'real',
-          q: 'NovaFi 是真实公司吗？',
+          q: 'NovaFi 已达到可上线标准吗？',
           a:
-            'NovaFi 是本演示落地页的虚构项目，用于展示 React 下的 Web3 产品叙事。',
+            '此页面是虚构演示，但其信息架构按可信的 Web3 基础设施产品标准来设计。',
         },
         {
           id: 'experience',
-          q: '需要加密货币经验吗？',
+          q: '是否适合开发者集成？',
           a:
-            '界面面向初学者：直白文案、清晰手续费与引导流程。准备好后可使用进阶工具。',
+            '适合。文案、流程与功能结构都针对需要清晰 API、可预测执行与低摩擦集成的团队。',
         },
         {
           id: 'wallets',
-          q: '支持哪些钱包？',
+          q: '支持哪些钱包和托管方案？',
           a:
-            '任意标准 EVM 钱包均可（如 MetaMask、Rainbow、Coinbase Wallet）。硬件钱包可通过浏览器提供商支持。',
+            '标准 EVM 钱包与已批准的托管方案均可接入。硬件钱包可通过浏览器提供商支持。',
         },
         {
           id: 'fees',
-          q: '是否有手续费？',
+          q: '费用如何处理？',
           a:
-            '网络手续费取决于链上活跃度。部分金库策略会收取少量协议费——确认前始终可见。',
+            '网络费用取决于目标链。任何协议费或路由费都会在确认前明确披露，方便团队规划执行。',
         },
       ],
     },
     footer: {
       tagline:
-        '新一代 DeFi 基础设施——虚构演示，呈现现代 Web3 落地体验。',
-      product: '产品',
-      legal: '法律信息',
-      privacy: '隐私（演示）',
-      terms: '条款（演示）',
-      copyright: '演示项目。',
+        '以安全、信任与执行精度为核心的 Web3 基础设施。',
+      product: '平台',
+      legal: '治理',
+      privacy: '隐私',
+      terms: '条款',
+      copyright: '演示概念，非上线协议。',
       twitter: 'Twitter',
       discord: 'Discord',
       github: 'GitHub',
@@ -332,11 +360,12 @@ export const translations = {
       chooseLanguage: '언어 선택',
     },
     hero: {
-      badge: '● 메인넷 준비 프리뷰',
-      titleBefore: '디파이 인프라를',
-      titleHighlight: '더 쉽게',
+      badge: '● 보안 우선 Web3 인프라',
+      titleBefore: '신뢰를 중심으로 설계된 크립토 인프라,',
+      titleHighlight: '더 견고하게',
+      titleAfter: '더 확장 가능하게',
       lead:
-        'NovaFi는 지갑·유동성·수익을 하나의 안전한 레이어로 연결합니다. 복잡함 없이 Web3를 쓰고 싶은 빌더와 일반 사용자를 위해 만들었습니다.',
+        'NovaFi는 자산 워크플로, 크로스체인 운영, 개발자 기능을 하나의 안전한 레이어로 묶어 합리적이고 규정 친화적인 실행을 돕습니다.',
       exploreFeatures: '기능 살펴보기',
       readFaq: 'FAQ 보기',
       cardHeader: '포트폴리오 스냅샷',
@@ -348,123 +377,134 @@ export const translations = {
       statTotalValue: '$42,180',
     },
     features: {
-      sectionTitle: 'NovaFi를 선택하는 이유',
-      sectionLead:
-        '온체인 가치 이동에 필요한 모든 것을 복잡함 없이 제공합니다.',
+      sectionTitle: '신뢰를 위해 설계된 인프라',
+      sectionLead: '보안, 규정 준수, 크로스체인 자산 흐름을 위한 운영 레이어입니다.',
       items: [
         {
           id: 'security',
-          title: '보안 우선 설계',
+          title: '보안과 규정 준수',
           body:
-            '스마트 컨트랙트는 감사와 모니터링을 거칩니다. 키는 항상 사용자 지갑에 남으며 NovaFi는 자금을 보관하지 않습니다.',
+            '감사된 컨트랙트, 모니터링 체계, 권한 인지 흐름으로 엔터프라이즈 수준의 위험 기준에 맞춥니다. 자금은 비수탁 구조로 유지됩니다.',
         },
         {
           id: 'speed',
-          title: '빠른 확정성',
+          title: '크로스체인 실행 레이어',
           body:
-            '목적형 롤업으로 낮은 지연과 예측 가능한 수수료를 제공해 거래가 즉각적으로 느껴집니다.',
+            '다중 체인 자산 라우팅, 예측 가능한 정산 경로, 투명한 수수료, 안정적인 최종성을 제공합니다.',
         },
         {
           id: 'modules',
-          title: '조합 가능한 모듈',
+          title: '개발자 친화적 워크플로',
           body:
-            '하나의 SDK로 스왑·대출·스테이킹을 연결합니다. 통합 부담을 줄이고 더 빠르게 제품을 출시하세요.',
+            '하나의 SDK로 스왑, 볼트, 자금 운영 흐름을 제공해 불안정한 통합 없이 빠르게 출시할 수 있습니다.',
         },
       ],
     },
     howItWorks: {
-      sectionTitle: '작동 방식',
-      sectionLead: '수익까지 세 단계. 어려운 용어는 필요 없습니다.',
+      sectionEyebrow: '운영 흐름',
+      sectionTitle: 'NovaFi에서 운영되는 방식',
+      sectionLead: '자산 통제, 크로스체인 실행, 감사 가능성을 위한 보안 워크플로입니다.',
       steps: [
         {
           id: 'wallet',
-          title: '지갑 연결',
+          label: '단계 01',
+          kicker: '신뢰 가능한 접근 계층',
+          title: '승인된 지갑 연결',
           body:
-            '주요 EVM 지갑을 사용할 수 있습니다. NovaFi는 잔액만 읽으며 자산을 옮기지 않습니다.',
+            '표준 EVM 지갑 또는 승인된 커스터디를 연결합니다. NovaFi는 잔액과 권한만 읽고 자산을 보관하거나 이동하지 않습니다.',
         },
         {
           id: 'strategy',
-          title: '전략 선택',
+          label: '단계 02',
+          kicker: '실행 정책',
+          title: '워크플로 설정',
           body:
-            '큐레이션 볼트를 고르거나 유동성을 직접 라우팅합니다. 수수료는 확인 전에 표시됩니다.',
+            '자금 운영 경로, 볼트 정책, 크로스체인 실행 경로를 선택합니다. 수수료, 제어 항목, 실행 규칙이 확인 전에 표시됩니다.',
         },
         {
           id: 'earn',
-          title: '수익 및 출금',
+          label: '단계 03',
+          kicker: '보고 추적선',
+          title: '추적, 정산, 보고',
           body:
-            '보상은 지속적으로 쌓입니다. 언제든지 투명한 정산으로 출금할 수 있습니다.',
+            '포지션을 추적하고 투명하게 정산하며, 재무·리스크·운영 팀에 필요한 기록을 내보낼 수 있습니다.',
         },
       ],
     },
     roadmap: {
+      sectionEyebrow: '전개 경로',
       sectionTitle: '로드맵',
       sectionLead:
-        '출시부터 커뮤니티 소유 프로토콜까지 투명한 여정입니다.',
+        '통제된 출시에서 멀티체인, 인프라급 운영으로 이어지는 신중한 전개입니다.',
       phases: [
         {
           id: 'q1',
-          label: '2026 Q1',
-          title: '기반',
-          bullets: ['퍼블릭 테스트넷', '지갑 SDK 알파', '커뮤니티 그랜트'],
+          label: '단계 01',
+          title: '통제된 출시',
+          summary: '확장 전에 신뢰 기반을 먼저 구축합니다.',
+          bullets: ['보안 감사 및 검토', '파트너용 프라이빗 테스트넷', '개발자 SDK 알파'],
         },
         {
           id: 'q2',
-          label: '2026 Q2',
-          title: '성장',
-          bullets: ['메인넷 출시', '유동성 마이닝', '파트너 통합'],
+          label: '단계 02',
+          title: '운영 확장',
+          summary: '더 강한 정책 제어로 핵심 워크플로를 엽니다.',
+          bullets: ['정책 제어가 적용된 메인넷', '자금 및 볼트 워크플로', '파트너·커스터디 통합'],
         },
         {
           id: 'q3',
-          label: '2026 Q3',
-          title: '확장',
-          bullets: ['크로스체인 브릿지', '기관용 API', '모바일 앱 베타'],
+          label: '단계 03',
+          title: '크로스체인 확장',
+          summary: '라우팅, 분석, 기관 접근을 확장합니다.',
+          bullets: ['크로스체인 라우팅', '기관용 API 세트', '워크플로 분석 대시보드'],
         },
         {
           id: 'q4',
-          label: '2026 Q4',
-          title: '거버넌스',
-          bullets: ['DAO 재무', '토큰 투표 라이브', '2027 연구 로드맵'],
+          label: '단계 04',
+          title: '프로토콜 성숙',
+          summary: '거버넌스, 제어, 보고 체계를 강화합니다.',
+          bullets: ['거버넌스 및 제어 레이어', '규정 준수 리포트 내보내기', '2027 확장 청사진'],
         },
       ],
     },
     faq: {
       sectionTitle: 'FAQ',
-      sectionLead: 'NovaFi에 대한 빠른 답변. 질문을 눌러 자세히 보세요.',
+      sectionLead: '보안, 재무, 운영, 통합 팀을 위한 간결한 답변입니다.',
       items: [
         {
           id: 'real',
-          q: 'NovaFi는 실제 회사인가요?',
+          q: 'NovaFi는 상용 수준인가요?',
           a:
-            'NovaFi는 이 데모 랜딩 페이지를 위한 가상의 프로젝트이며, React로 Web3 스토리를 어떻게 보여줄 수 있는지 예시입니다.',
+            '이 랜딩은 가상 데모지만, 정보 구조는 신뢰할 수 있는 Web3 인프라 제품 기준으로 설계했습니다.',
         },
         {
           id: 'experience',
-          q: '암호화폐 경험이 필요한가요?',
+          q: '개발자 친화적인가요?',
           a:
-            '초보자를 위해 평이한 문구, 명확한 수수료, 안내 흐름을 제공합니다. 준비가 되면 고급 도구도 이용할 수 있습니다.',
+            '그렇습니다. 명확한 API, 예측 가능한 실행, 낮은 통합 마찰을 필요로 하는 팀에 맞춰 설계했습니다.',
         },
         {
           id: 'wallets',
-          q: '어떤 지갑을 지원하나요?',
+          q: '어떤 지갑과 커스터디를 지원하나요?',
           a:
-            '표준 EVM 지갑은 모두 사용할 수 있습니다(예: MetaMask, Rainbow, Coinbase Wallet). 하드웨어 지갑은 브라우저 프로바이더를 통해 지원됩니다.',
+            '표준 EVM 지갑과 승인된 커스터디를 지원합니다. 하드웨어 지갑은 브라우저 제공자를 통해 연동할 수 있습니다.',
         },
         {
           id: 'fees',
-          q: '수수료가 있나요?',
+          q: '수수료는 어떻게 처리되나요?',
           a:
-            '네트워크 수수료는 체인 활동에 따라 달라집니다. 일부 볼트 전략에는 소액의 프로토콜 수수료가 있으며 확인 전에 항상 표시됩니다.',
+            '네트워크 수수료는 대상 체인에 따라 달라집니다. 프로토콜 수수료나 라우팅 비용이 있으면 확인 전에 명확히 표시됩니다.',
         },
       ],
     },
     footer: {
       tagline:
-        '차세대 DeFi 인프라 — 현대적인 Web3 랜딩 경험을 보여주는 가상 데모입니다.',
-      product: '제품',
-      legal: '법적 고지',
-      privacy: '개인정보(데모)',
-      terms: '약관(데모)',
-      copyright: '데모 프로젝트.',
+        '신뢰, 통제, 정밀한 실행을 위한 보안 우선 Web3 인프라입니다.',
+      product: '플랫폼',
+      legal: '거버넌스',
+      privacy: '개인정보',
+      terms: '약관',
+      copyright: '데모 컨셉, 운영 중인 프로토콜 아님.',
       twitter: 'Twitter',
       discord: 'Discord',
       github: 'GitHub',
