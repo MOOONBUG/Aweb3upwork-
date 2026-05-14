@@ -27,7 +27,7 @@ function readStoredLocale() {
 }
 
 export function LanguageProvider({ children }) {
-  const [locale, setLocaleState] = useState(readStoredLocale)
+  const [locale, setLocaleState] = useState(() => readStoredLocale() || 'en')
 
   const setLocale = useCallback((code) => {
     if (LOCALE_CODES.includes(code)) setLocaleState(code)
